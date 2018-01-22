@@ -3,10 +3,7 @@ const app = "I don't do much."
 var pbj = {
   bread: 'white',
   ingredients: ['peanut butter', 'jelly'],
-  cut: 'triangles',
-  serve: function() {
-    console.log('here is your ' + this.name + ', enjoy');
-  },
+  name: 'PB&J',
 };
 
 function Sandwich(bread, ingredients, name) {
@@ -46,6 +43,8 @@ function serve() {
 //no arguments
 serve.call(blt);
 serve.apply(blt, ['Fred', 'Led', 'Yed']);
+
+pbj.describe.bind(salad);
 
 
 
