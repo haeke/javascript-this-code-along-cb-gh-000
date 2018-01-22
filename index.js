@@ -23,11 +23,13 @@ function serve(customer) {
   console.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
 }
 
+serve.apply(reuben, ['Jesse']);
+
 function deliverFood(customer, table) {
   console.log('delivering ' + this.name + ' to ' + customer + ' at table ' + table);
 }
 
-deliver.call()
+deliver.call(blt, "Terry", 4);
 
 
 
