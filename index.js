@@ -22,14 +22,16 @@ var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing
 function serve(customer) {
   console.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
 }
+//needs an object and string
 serve.call(reuben, 'Jesse');
+//needs and object and an array
 serve.apply(reuben, ['Jesse']);
 
 function deliverFood(customer, table) {
   console.log('delivering ' + this.name + ' to ' + customer + ' at table ' + table);
 }
 
-deliver.call(blt, "Terry", 4);
+deliver.call(blt, "Terry", "6");
 
 
 
