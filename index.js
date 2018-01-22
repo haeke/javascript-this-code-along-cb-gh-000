@@ -60,7 +60,8 @@ var salad = {
   ingredients: ['croutons', 'romaine', 'steak', 'caesar'],
   name: 'Steak Caesar',
 };
-
+// add a describe property to salad
+// borrow it from the SandwichTwo function
 salad.describe = pbj.describe.bind(salad);
 
 
