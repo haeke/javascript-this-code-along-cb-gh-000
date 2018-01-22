@@ -64,6 +64,10 @@ var salad = {
 // borrow it from the SandwichTwo function
 salad.describe = pbj.describe.bind(salad);
 
+function visitTable() {
+  console.log('The server is visitng: ' + this.name + ' at table number ' + this.tableNumber);
+}
+
 function Customer(name, tableNumber) {
   this.name = name;
   this.tableNumber = tableNumber;
