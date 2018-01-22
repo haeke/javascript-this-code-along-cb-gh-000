@@ -16,7 +16,11 @@ function Sandwich(bread, ingredients, name) {
 }
 
 function serve(customer) {
-  consol.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
+  console.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
+}
+
+function deliverFood(customer, table) {
+  console.log('delivering ' + this.name + ' to ' + customer + ' at table ' + table);
 }
 
 var blt = new Sandwich('white', ['bacon', 'lettuce', 'tomato'], 'half');
