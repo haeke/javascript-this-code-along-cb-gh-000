@@ -35,7 +35,9 @@ deliver.call(blt, "Terry", "6");
 
 function serve() {
   if (arguments.length > 0) {
-    var customers = 
+    var customers = Array.prototype.slice.call(arguments);
+    last = customers.pop();
+    console.log(this.name + ' for ' + customers.join(', ') + ' and ' + last + '. Enjoy!');
   }
 }
 
