@@ -15,6 +15,10 @@ function Sandwich(bread, ingredients, name) {
   this.name = name
 }
 
+var blt = new Sandwich('white', ['bacon', 'lettuce', 'tomato'], 'BLT');
+
+var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing'], 'diagonal');
+
 function serve(customer) {
   console.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
 }
@@ -23,11 +27,9 @@ function deliverFood(customer, table) {
   console.log('delivering ' + this.name + ' to ' + customer + ' at table ' + table);
 }
 
-var blt = new Sandwich('white', ['bacon', 'lettuce', 'tomato'], 'half');
-blt.name = "BLT"
-blt.serve();
+deliver.call()
 
-var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing'], 'diagonal');
+
 
 
 
