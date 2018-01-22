@@ -13,9 +13,7 @@ function Sandwich(bread, ingredients, cut) {
   this.bread = bread;
   this.ingredients = ingredients;
   this.cut = cut;
-  this.serve = function () {
-    console.log('here is your ' + this.name + ', enjoy');
-  };
+  this.name = name
 }
 
 function serve(customer) {
