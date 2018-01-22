@@ -24,4 +24,18 @@ blt.serve();
 
 var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing'], 'diagonal');
 
+function SandwichTwo(bread, ingredients, name) {
+  this.bread = bread;
+  this.ingredients = ingredients;
+  this.name = name;
+}
+
+function servetwo() {
+  console.log('here\'s your ' + this.name + ', enjoy!');
+}
+
+var gc = new SandwichTwo('white', ['cheese'], "grilled cheese");
+
+var ham = new SandwichTwo('white', ['ham', 'cheese'], 'ham & cheese');
+
 
