@@ -38,8 +38,14 @@ function serve() {
     var customers = Array.prototype.slice.call(arguments);
     last = customers.pop();
     console.log(this.name + ' for ' + customers.join(', ') + ' and ' + last + '. Enjoy!');
+  } else {
+    console.log(this.name + '. order up');
   }
 }
+
+//no arguments
+serve.call(blt);
+serve.apply(blt, ['Fred', 'Led', 'Yed']);
 
 
 
