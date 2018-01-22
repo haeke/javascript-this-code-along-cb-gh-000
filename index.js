@@ -44,9 +44,26 @@ function serve() {
 serve.call(blt);
 serve.apply(blt, ['Fred', 'Led', 'Yed']);
 
-//use the bind function
-var describeSalad = pbj.describe.bind(salad);
-describeSalad();
+
+function SandwichTwo(bread, ingredients, name) {
+  this.bread = bread;
+  this.ingredients = ingredients;
+  this.name = name;
+  this.describe = function() {
+    console.log('your ' + this.name + ' includes: ' + this.ingredients.join(", ") + '. yum!');
+  }
+}
+
+var pbj = new SandwichTwo('wheat', ['chunky peanut butter', 'blackberry'], 'PB&J');
+
+var salad = {
+  ingredients: ['croutons', 'romaine', 'steak', 'caesar'],
+  name: 'Steak Caesar',
+};
+
+salad.describe = pbj.describe.bind(salad);
+
+
 
 
 
