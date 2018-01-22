@@ -33,6 +33,12 @@ function deliverFood(customer, table) {
 
 deliver.call(blt, "Terry", "6");
 
+function serve() {
+  if (arguments.length > 0) {
+    var customers = 
+  }
+}
+
 
 
 
