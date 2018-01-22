@@ -22,7 +22,7 @@ var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing
 function serve(customer) {
   console.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
 }
-
+serve.call(reuben, 'Jesse');
 serve.apply(reuben, ['Jesse']);
 
 function deliverFood(customer, table) {
