@@ -38,4 +38,6 @@ var gc = new SandwichTwo('white', ['cheese'], "grilled cheese");
 
 var ham = new SandwichTwo('white', ['ham', 'cheese'], 'ham & cheese');
 
+serve.call(gc);
+serve.call(ham);
 
