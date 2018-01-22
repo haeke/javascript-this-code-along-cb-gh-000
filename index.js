@@ -18,6 +18,10 @@ function Sandwich(bread, ingredients, cut) {
   };
 }
 
+function serve(customer) {
+  consol.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
+}
+
 var blt = new Sandwich('white', ['bacon', 'lettuce', 'tomato'], 'half');
 blt.name = "BLT"
 blt.serve();
