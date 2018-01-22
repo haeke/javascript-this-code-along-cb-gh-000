@@ -44,7 +44,7 @@ function serve() {
 serve.call(blt);
 serve.apply(blt, ['Fred', 'Led', 'Yed']);
 
-pbj.describe.bind(salad);
+var describeSalad = pbj.describe.bind(salad);
 
 
 
