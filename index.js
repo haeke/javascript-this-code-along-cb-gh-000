@@ -73,6 +73,10 @@ function Customer(name, tableNumber) {
   this.tableNumber = tableNumber;
 }
 
+var sally = new Customer('Sally', '5');
+
+var visitsally = visitTable.bind(sally);
+setTimeout(visitsally, 1000);
 
 
 
