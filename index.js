@@ -64,6 +64,11 @@ var salad = {
 // borrow it from the SandwichTwo function
 salad.describe = pbj.describe.bind(salad);
 
+function Customer(name, tableNumber) {
+  this.name = name;
+  this.tableNumber = tableNumber;
+}
+
 
 
 
