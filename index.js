@@ -9,10 +9,9 @@ var pbj = {
   },
 };
 
-function Sandwich(bread, ingredients, cut) {
+function Sandwich(bread, ingredients, name) {
   this.bread = bread;
   this.ingredients = ingredients;
-  this.cut = cut;
   this.name = name
 }
 
