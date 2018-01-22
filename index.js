@@ -17,7 +17,7 @@ function Sandwich(bread, ingredients, name) {
 
 var blt = new Sandwich('white', ['bacon', 'lettuce', 'tomato'], 'BLT');
 
-var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing'], 'diagonal');
+var reuben = new Sandwich('rye', ['corned beef', 'sauerkraut', 'russian dressing'], 'Reuben');
 
 function serve(customer) {
   console.log('hey ' + customer + ', here is your ', this.name + ', enjoy!');
